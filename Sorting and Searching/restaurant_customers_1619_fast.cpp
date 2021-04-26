@@ -1,8 +1,8 @@
 #include <bits/stdc++.h>
 using namespace std;
-typedef int ll;
-inline ll input(){
-	ll t = 0;
+
+inline int input(){
+	int t = 0;
 	char c;
 	while((c=getchar_unlocked())!='\n'&&c!=' '&&c!=EOF)t=t*10+c-48;
 	return t;
