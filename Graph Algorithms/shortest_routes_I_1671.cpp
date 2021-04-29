@@ -16,7 +16,8 @@ int main() {
 
     priority_queue<pair<long long, int>, vector<pair<long long, int> >, greater<pair<long long, int> > > pq;
     bool processed[n+1];
-    for (int i = 0; i <= n; i++) processed[i] = false;
+    //for (int i = 0; i <= n; i++) processed[i] = false;
+    memset(processed, false, sizeof processed);
     dist[1] = 0;
     pq.push(make_pair(0, 1));
     while (!pq.empty()) {
